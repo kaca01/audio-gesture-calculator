@@ -3,6 +3,7 @@ from audio_calculator import calculate as ac
 from helper.audio_capturer import record_voice, save_recording
 from helper.video_capturer import record_video
 from CNN import get_model
+from SVM import get_audio_model
 from video_calculator import test_video
 from video_calculator import calculate as vc
 
@@ -51,6 +52,8 @@ def meni_2():
     print("Treniranje zvuka počelo...")
 
     # todo zovni funkciju za treniranje
+    path = './data/audio/training_data'
+    get_audio_model(path)
 
     print("Završeno treniranje!")
     print("Vraćeni ste na glavni meni")
