@@ -8,16 +8,16 @@ from video_calculator import calculate as vc
 
 
 def meni():
-    print("-"*20 + "Meni" + 20*"-")
-    print("1. Istreniraj model za klasifikaciju slika (CNN)")
-    print("2. Istreniraj model za klasifikaciju zvuka (SVM)")
-    print("3. Testiraj rad kalkulatora nad video skupom")
-    print("4. Testiraj rad kalkulatora nad audio skupom")
-    print("5. Snimi video i saznaj odgovor Sakalkulatora!")
-    print("6. Snimi zvuk i saznaj odgovor Sakalkulatora!")
-    print("7. Bye Sakalkulatoru :( ")
-
     while True:
+        print("")
+        print("-" * 20 + "Meni" + 20 * "-")
+        print("1. Istreniraj model za klasifikaciju slika (CNN)")
+        print("2. Istreniraj model za klasifikaciju zvuka (SVM)")
+        print("3. Testiraj rad kalkulatora nad video skupom")
+        print("4. Testiraj rad kalkulatora nad audio skupom")
+        print("5. Snimi video i saznaj odgovor Sakalkulatora!")
+        print("6. Snimi zvuk i saznaj odgovor Sakalkulatora!")
+        print("7. Bye Sakalkulatoru :( ")
         user_input = input()
         if user_input == '1':
             meni_1()
