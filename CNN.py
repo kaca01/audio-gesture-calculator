@@ -3,11 +3,10 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras import layers, models
 from tensorflow.keras.callbacks import EarlyStopping
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
-from keras.layers import Conv2D, MaxPooling2D, Dropout, Dense, Flatten
+from keras.layers import Conv2D, MaxPooling2D
 from keras.regularizers import l2
 from sklearn.metrics import precision_score, recall_score, f1_score
 
